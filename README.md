@@ -12,7 +12,7 @@
 ## Задание
 Задание размещено в папке **task** в файле [README.md](task/README.md).
 
-**Статический сайт - [`ОТКРЫТЬ`](https://github.com/ask3la/Project-Practice/site/index.html)**
+**Статический сайт - [`ОТКРЫТЬ`](https://ask3la.github.io/Project-Practice/site/index.html)**
 
 ## Вариативная часть задания
 ### 2. Практическая реализация технологии
