@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фреймворк для алгоритмической торговли</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #fff5e6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #f4a261;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            border-radius: 0 0 30px 30px;
+        }
+
+        .tech-stack {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .tech-item {
+            text-align: center;
+            padding: 15px;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #ffd7ba;
+            transition: transform 0.3s ease;
+        }
+
+        .tech-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .screenshots {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .screenshot {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 2px 5px rgba(244,162,97,0.2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background: #f4a261;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #f4a261;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 30px 30px 0 0;
+        }
+
+        .progress-log {
+            margin: 40px 0;
+        }
+
+        .progress-log h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .progress-log .timeline-item {
+            position: relative;
+            padding: 25px;
+            margin-left: 20px;
+        }
+
+        .progress-log .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #f4a261;
+        }
+
+        .progress-log .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: -29px;
+            top: 30px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #f4a261;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 5px rgba(244,162,97,0.3);
+        }
+
+        .progress-log h3 {
+            color: #e76f51;
+            margin-bottom: 15px;
+        }
+
+        .progress-log ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .progress-log ul ul {
+            margin: 5px 0 10px 20px;
+        }
+
+        .progress-log li {
+            margin: 8px 0;
+            position: relative;
+        }
+
+        .progress-log li:before {
+            content: '•';
+            color: #f4a261;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .progress-log ul ul li:before {
+            content: '◦';
+        }
+
+        .navigation-buttons {
+            text-align: center;
+            margin: 40px 0;
+            padding: 20px;
+        }
+
+        .navigation-buttons h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .button-group .button {
+            min-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Фреймворк для алгоритмической торговли</h1>
+            <p>Мощный инструмент для создания, тестирования и запуска торговых стратегий на финансовых рынках</p>
+            <a href="https://t.me/Test_B0y_bot" class="button">
+                <i class="fab fa-telegram"></i> Telegram-бот по гороскопам
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="tech-stack">
+            <h2>Ключевые технологии</h2>
+            <div class="tech-item">
+                <i class="fab fa-python fa-3x"></i>
+                <h3>Python 3.11</h3>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Backtrader</h3>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-cloud fa-3x"></i>
+                <h3>API брокеров</h3>
+            </div>
+            <div class="tech-item">
+                <i class="fas fa-database fa-3x"></i>
+                <h3>PostgreSQL</h3>
+            </div>
+        </section>
+
+        <section class="navigation-buttons">
+            <h2>Быстрый доступ</h2>
+            <div class="button-group">
+                <a href="about.html" class="button">
+                    <i class="fas fa-info-circle"></i> О проекте
+                </a>
+                <a href="journal.html" class="button">
+                    <i class="fas fa-newspaper"></i> Журнал
+                </a>
+                <a href="resources.html" class="button">
+                    <i class="fas fa-link"></i> Ресурсы
+                </a>
+                <a href="telegram-bot.html" class="button">
+                    <i class="fab fa-telegram"></i> Telegram-бот по гороскопам
+                </a>
+                <a href="https://github.com/yourusername/your-bot" class="button">
+                    <i class="fab fa-github"></i> Исходный код
+                </a>
+            </div>
+        </section>
+
+        <section class="progress-log">
+            <h2>Возможности фреймворка</h2>
+            <div class="timeline-item">
+                <h3>Быстрый старт</h3>
+                <ul>
+                    <li>Готовые шаблоны стратегий</li>
+                    <li>Интеграция с популярными брокерами</li>
+                    <li>Поддержка исторических и реальных данных</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Тестирование и оптимизация</h3>
+                <ul>
+                    <li>Бэктестинг на исторических данных</li>
+                    <li>Визуализация результатов</li>
+                    <li>Гибкая настройка параметров</li>
+                </ul>
+            </div>
+            <div class="timeline-item">
+                <h3>Автоматизация торговли</h3>
+                <ul>
+                    <li>Запуск стратегий в реальном времени</li>
+                    <li>Логирование и мониторинг сделок</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Разработчики: Арзамазов Виктор и Больбот Алексей<br>Учебная группа 241-326<br>В проект также входит <a href="telegram-bot.html" style="color: #fff; text-decoration: underline;">Telegram-бот по гороскопам</a></p>
+    </footer>
+</body>
+</html>

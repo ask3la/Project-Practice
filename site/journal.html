@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал проекта</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #fff5e6;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(244,162,97,0.15);
+            padding: 40px 30px;
+        }
+        h1 {
+            color: #e76f51;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .journal-entry {
+            background: #fff8f0;
+            border-left: 6px solid #f4a261;
+            margin-bottom: 30px;
+            padding: 25px 30px;
+            border-radius: 16px;
+            box-shadow: 0 2px 5px rgba(244,162,97,0.08);
+        }
+        .journal-entry h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .journal-entry .date {
+            color: #e76f51;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+        .back-link {
+            display: block;
+            margin-bottom: 20px;
+            color: #e76f51;
+            text-decoration: underline;
+        }
+        .nav {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .nav .button {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        .nav .button:hover {
+            background: #f4a261;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="Текстовый документ.html" class="button"><i class="fas fa-home"></i> На главную</a>
+            <a href="about.html" class="button"><i class="fas fa-info-circle"></i> О проекте</a>
+            <a href="resources.html" class="button"><i class="fas fa-link"></i> Ресурсы</a>
+        </div>
+        <h1>Журнал проекта</h1>
+        <h2 style="text-align:center; margin-top:40px;">Скриншоты проекта</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 30px;">
+            <div style="text-align:center;">
+                <img src="graph1.png" alt="График торговли" style="max-width:320px; border-radius:16px; box-shadow:0 2px 8px rgba(244,162,97,0.15); margin-bottom:10px;">
+                <div style="color:#2c3e50;">График торговли</div>
+            </div>
+            <div style="text-align:center;">
+                <img src="Написаные статьи.png" alt="Написанные статьи" style="max-width:320px; border-radius:16px; box-shadow:0 2px 8px rgba(244,162,97,0.15); margin-bottom:10px;">
+                <div style="color:#2c3e50;">Написанные статьи</div>
+            </div>
+            <div style="text-align:center;">
+                <img src="Параметры.png" alt="Параметры" style="max-width:320px; border-radius:16px; box-shadow:0 2px 8px rgba(244,162,97,0.15); margin-bottom:10px;">
+                <div style="color:#2c3e50;">Параметры для оценки стратегий</div>
+            </div>
+        </div>
+        <div style="max-width:700px; margin:0 auto 40px auto; background:#fff8f0; border-left:6px solid #f4a261; border-radius:16px; box-shadow:0 2px 5px rgba(244,162,97,0.08); padding:30px;">
+            <h2 style="color:#e76f51; text-align:center;">Достижения проекта</h2>
+            <ul style="font-size:1.1em;">
+                <li>Разработана и внедрена база данных на PostgreSQL</li>
+                <li>Созданы параметры для оценки торговых стратегий</li>
+                <li>Подготовлены и оформлены информационные статьи</li>
+                <li>Проведено тестирование и оптимизация основных функций</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
